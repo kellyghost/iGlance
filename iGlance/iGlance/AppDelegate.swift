@@ -120,7 +120,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         loadSessionSettings()
 
-        myWindowController = (NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "abcd") as! MyMainWindow)
+        myWindowController = (NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "MainWindow") as! MyMainWindow)
 
         displayStatusItems()
 
