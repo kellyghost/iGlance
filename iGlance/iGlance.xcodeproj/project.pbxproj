@@ -27,6 +27,7 @@
 		02ECFC7B20C80A9500E0A1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02ECFC7920C80A9500E0A1D7 /* Main.storyboard */; };
 		02ECFC8120C80CBA00E0A1D7 /* iGlanceLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02ECFC7120C80A9300E0A1D7 /* iGlanceLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		02ECFC8420C80CF800E0A1D7 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ECFC8320C80CF800E0A1D7 /* ServiceManagement.framework */; };
+		B447F6C9225C7641004BD50F /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B447F6C8225C7641004BD50F /* SidebarViewController.swift */; };
 		B471FE4321F4D9B900DAC679 /* NetUsageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471FE4221F4D9B900DAC679 /* NetUsageComponent.swift */; };
 		B494383A21F246B000F80E03 /* FanComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B494383921F246B000F80E03 /* FanComponent.swift */; };
 		B4A54A912218723200957E17 /* MenuBarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A54A902218723200957E17 /* MenuBarGraph.swift */; };
@@ -74,13 +75,14 @@
 		02B8120C20C9874D00C98F0D /* MemMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemMenuView.swift; sourceTree = "<group>"; };
 		02B9B3C920D2B77E0068B53F /* CPUTempMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPUTempMenuView.xib; sourceTree = "<group>"; };
 		02B9B3CB20D2B7940068B53F /* CPUTempMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUTempMenuView.swift; sourceTree = "<group>"; };
-		02E9CE2F20C526BE00879EB1 /* MyMainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyMainWindow.swift; path = iGlance/MyMainWindow.swift; sourceTree = SOURCE_ROOT; };
+		02E9CE2F20C526BE00879EB1 /* MyMainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyMainWindow.swift; path = iGlance/MainWindow/MyMainWindow.swift; sourceTree = SOURCE_ROOT; };
 		02ECFC7120C80A9300E0A1D7 /* iGlanceLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGlanceLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02ECFC7320C80A9300E0A1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02ECFC7720C80A9500E0A1D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02ECFC7A20C80A9500E0A1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02ECFC7C20C80A9500E0A1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02ECFC8320C80CF800E0A1D7 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		B447F6C8225C7641004BD50F /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		B471FE4221F4D9B900DAC679 /* NetUsageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetUsageComponent.swift; sourceTree = "<group>"; };
 		B494383921F246B000F80E03 /* FanComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanComponent.swift; sourceTree = "<group>"; };
 		B4A54A902218723200957E17 /* MenuBarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarGraph.swift; sourceTree = "<group>"; };
@@ -145,8 +147,8 @@
 				B4FF094F20D02248006BE560 /* Components */,
 				025AC38A20C0AFDD000E0837 /* AppDelegate.swift */,
 				025AC38C20C0AFDD000E0837 /* ViewController.swift */,
-				02E9CE2F20C526BE00879EB1 /* MyMainWindow.swift */,
 				029DC1AC20CDCA9800F7A30D /* StatusItems.swift */,
+				B447F6CA225C813D004BD50F /* MainWindow */,
 				025AC38E20C0AFE0000E0837 /* Assets.xcassets */,
 				025AC39020C0AFE0000E0837 /* Main.storyboard */,
 				025AC39320C0AFE0000E0837 /* Info.plist */,
@@ -173,6 +175,15 @@
 				02ECFC8320C80CF800E0A1D7 /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B447F6CA225C813D004BD50F /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				02E9CE2F20C526BE00879EB1 /* MyMainWindow.swift */,
+				B447F6C8225C7641004BD50F /* SidebarViewController.swift */,
+			);
+			path = MainWindow;
 			sourceTree = "<group>";
 		};
 		B4A54A922218793B00957E17 /* Utils */ = {
@@ -382,6 +393,7 @@
 				B4EF0F352184C54800A28F5E /* CpuTempComponent.swift in Sources */,
 				023642F120CAD81D00CDB17D /* SMC.swift in Sources */,
 				B4EF0F3A2184C99A00A28F5E /* CpuView.swift in Sources */,
+				B447F6C9225C7641004BD50F /* SidebarViewController.swift in Sources */,
 				B4EF0F3C2184CC9B00A28F5E /* MemoryView.swift in Sources */,
 				B4DD136A21F3C59C00652861 /* MemUsageComponent.swift in Sources */,
 				02B8120920C95D6600C98F0D /* CPUMenuView.swift in Sources */,
